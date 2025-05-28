@@ -94,19 +94,20 @@
   flex-direction: column;
   gap: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
   width: 100%;           
   max-width: 240px;
   min-width: 160px;
   flex: 1 1 auto;        
   height: 100%; 
   margin-top: 1rem; 
-  margin-bottom: 0.5;         
+  margin-bottom: 0.5; 
+  will-change: transform;        
 }
 
 .simpleCard:hover {
-  transform: translateY(-2px);
   background-color: #c3c8ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cardText {
