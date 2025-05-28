@@ -1,0 +1,32 @@
+.container {
+  flex-shrink: 1;
+  min-height: 0;
+  max-height: fit-content;
+  overflow: hidden;
+  padding: 0.7rem;
+  background-color:#eff2fd ;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dayGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dayLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cardRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

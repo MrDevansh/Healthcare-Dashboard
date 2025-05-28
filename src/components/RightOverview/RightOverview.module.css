@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+}
+
+.unifiedBlock {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color:#eff2fd;
+  box-sizing: border-box;
+}
+
+.blockTopRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(165, 165, 228);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e5e7eb;
+}
+
+.addButton {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.calendarView,
+.scheduleWrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.calendarView {
+  flex: 0 0 52%;
+}
+
+.scheduleWrapper {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1024px) {
+  .unifiedBlock {
+    border-radius: 12px;
+  }
+}

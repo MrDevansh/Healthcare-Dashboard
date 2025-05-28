@@ -1,0 +1,70 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 150px;
+  gap: 0.6rem;
+  padding-left: 2rem;
+  padding-top: 10px;
+  width: 100%;
+  min-width: 140px;
+  max-width: 100%;
+  height: max-content;
+}
+
+.card {
+   width: 100%;
+  min-width: 140px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+}
+
+.icon {
+  font-size: 18px;
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.statusBar {
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 0.4rem 0;
+  overflow: hidden;
+}
+
+.status {
+  height: 100%;
+  width: 70%;
+}
+
+.date {
+  font-size: 12px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    width: 100%;
+    padding-left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 1 1 140px;
+    min-width: 120px;
+    max-width: 180px;
+  }
+}

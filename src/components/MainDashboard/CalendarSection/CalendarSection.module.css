@@ -1,0 +1,148 @@
+.container {
+  flex-shrink: 1;
+  min-height: 0;
+  max-height: fit-content;
+  overflow: hidden;
+  padding: 0.7rem;
+  background-color: #eff2fd; 
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendarGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.dayColumn {
+  flex: 1;
+  background-color: #f5f8ff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.dayColumn:hover {
+   transform: translateY(-2px);
+  background-color: #c7c3ff;
+}
+
+.dayHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateText {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.dayLabel {
+  font-size: 12px;
+  color: #475569;
+}
+
+.timeSlots {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+}
+.timeTag:hover {
+  background-color: #7c8ff2;
+}
+
+.timeTag {
+  background-color: #e0f2fe;
+  color: #1e3a8a;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+
+}
+
+.cardRow {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-right: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.simpleCard {
+  background-color: #dce3fc;
+  border-radius: 16px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  width: 100%;           
+  max-width: 240px;
+  min-width: 160px;
+  flex: 1 1 auto;        
+  height: 100%; 
+  margin-top: 1rem; 
+  margin-bottom: 0.5;         
+}
+
+.simpleCard:hover {
+  transform: translateY(-2px);
+  background-color: #c3c8ff;
+}
+
+.cardText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1px;
+}
+
+.cardIcon {
+  font-size: 16px;
+}
+
+.cardBottomRow {
+  display: flex;
+  flex-direction: column;
+ gap: 8px;
+  padding: 2px;
+}
+
+.cardTime {
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.cardDoctor {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+
+.wideCard {
+  width: 260px; 
+}

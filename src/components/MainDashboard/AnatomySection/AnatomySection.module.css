@@ -1,0 +1,78 @@
+.anatomySection {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  flex: 1.5;
+  flex: 1 1 250px;
+}
+
+.anatomyImage {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.zoomIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #f1f5f9;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.tag {
+  position: absolute;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background: #4a90e2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+}
+
+.heart {
+  top: 25%;
+  left: 77%;
+  background: #7C3AED;
+}
+
+.leg {
+  top: 80%;
+  left: 27%;
+  background: #10B981;
+}
+
+@media (max-width: 768px) {
+  .anatomySection {
+    flex: none;
+    padding: 1rem;
+  }
+
+  .tag {
+    font-size: 7px;
+    padding: 4px 8px;
+  }
+
+  .heart {
+    top: 25%;
+    left: 78%;
+  }
+
+  .leg {
+    top: 77%;
+    left: 24%;
+  }
+}
